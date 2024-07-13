@@ -6,7 +6,7 @@
 
 - name: Create project database
   postgresql_db: name={{ project_db }}
-                 encoding='UTF-8'
-                 lc_collate='en_US.UTF-8'
-                 lc_ctype='en_US.UTF-8'
-                 template='template0'
+                 encoding="{{ database_encoding }}"
+                 lc_collate="{{ database_lc_collate }}"
+                 lc_ctype="{{ database_lc_ctype }}"
+                 template="{{ database_template }}"
